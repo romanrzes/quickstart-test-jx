@@ -1,69 +1,71 @@
 
-Showing logs for build [32mromanrzes-quickstart-test-jx-pr-jkftg-1[0m stage [32mrun-make[0m and container [32mstep-credential-initializer-rq7m8[0m
-{"level":"warn","ts":1587137081.0664828,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1587137081.067388,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Showing logs for build [32mromanrzes-quickstart-test-jx-pr-m856t-1[0m stage [32mrun-make[0m and container [32mstep-credential-initializer-6tzjs[0m
+{"level":"warn","ts":1587138752.2461643,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1587138752.2468028,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
 
-Showing logs for build [32mromanrzes-quickstart-test-jx-pr-jkftg-1[0m stage [32mrun-make[0m and container [32mstep-working-dir-initializer-q5r4t[0m
-{"level":"warn","ts":1587137081.642313,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
-{"level":"info","ts":1587137081.6438508,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+Showing logs for build [32mromanrzes-quickstart-test-jx-pr-m856t-1[0m stage [32mrun-make[0m and container [32mstep-working-dir-initializer-vzd9r[0m
+{"level":"warn","ts":1587138753.280798,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1587138753.2819495,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
 
-Showing logs for build [32mromanrzes-quickstart-test-jx-pr-jkftg-1[0m stage [32mrun-make[0m and container [32mstep-place-tools[0m
+Showing logs for build [32mromanrzes-quickstart-test-jx-pr-m856t-1[0m stage [32mrun-make[0m and container [32mstep-place-tools[0m
 
-Showing logs for build [32mromanrzes-quickstart-test-jx-pr-jkftg-1[0m stage [32mrun-make[0m and container [32mstep-create-dir-workspace-m9pqm[0m
-{"level":"warn","ts":1587137147.7728796,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
-{"level":"info","ts":1587137147.7740855,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p source\"; output "}
+Showing logs for build [32mromanrzes-quickstart-test-jx-pr-m856t-1[0m stage [32mrun-make[0m and container [32mstep-create-dir-workspace-tz56x[0m
+{"level":"warn","ts":1587138759.4938357,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1587138759.4951947,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p source\"; output "}
 
-Showing logs for build [32mromanrzes-quickstart-test-jx-pr-jkftg-1[0m stage [32mrun-make[0m and container [32mstep-git-source-romanrzes-quickstart-test-jx-pr-jkftg-55x2v[0m
-{"level":"warn","ts":1587137147.9939811,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1587137149.09223,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/quickstart-test-**.git @ master in path /workspace/source"}
+Showing logs for build [32mromanrzes-quickstart-test-jx-pr-m856t-1[0m stage [32mrun-make[0m and container [32mstep-git-source-romanrzes-quickstart-test-jx-pr-m856t-5brxh[0m
+{"level":"warn","ts":1587138759.7537892,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1587138760.8244457,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/quickstart-test-**.git @ master in path /workspace/source"}
 
-Showing logs for build [32mromanrzes-quickstart-test-jx-pr-jkftg-1[0m stage [32mrun-make[0m and container [32mstep-git-merge[0m
-Using SHAs from PULL_REFS=master:479d0c2a33eccd8b20c08dec38f6258da01a3a3e,1:ac9542bf1c9fd39e2063824c60fd314144085a33
-DEBUG: LC_ALL=C JX_LOG_LEVEL=error git fetch origin --unshallow ac9542bf1c9fd39e2063824c60fd314144085a33: 479d0c2a33eccd8b20c08dec38f6258da01a3a3e:
-DEBUG: ran git fetch --unshallow origin ac9542bf1c9fd39e2063824c60fd314144085a33: 479d0c2a33eccd8b20c08dec38f6258da01a3a3e: in 
-DEBUG: JX_LOG_LEVEL=error LC_ALL=C git branch
+Showing logs for build [32mromanrzes-quickstart-test-jx-pr-m856t-1[0m stage [32mrun-make[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:7dca039a1b86d9de941d1693c6a95914fca42442,1:73124d0eab5cd3003c02b099f246eb7c3b769026
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git fetch origin --unshallow 73124d0eab5cd3003c02b099f246eb7c3b769026: 7dca039a1b86d9de941d1693c6a95914fca42442:
+DEBUG: ran git fetch --unshallow origin 73124d0eab5cd3003c02b099f246eb7c3b769026: 7dca039a1b86d9de941d1693c6a95914fca42442: in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git branch
 DEBUG: LC_ALL=C JX_LOG_LEVEL=error git checkout master
 DEBUG: ran git checkout master in 
-DEBUG: LC_ALL=C JX_LOG_LEVEL=error git reset --hard 479d0c2a33eccd8b20c08dec38f6258da01a3a3e
-DEBUG: ran git reset --hard 479d0c2a33eccd8b20c08dec38f6258da01a3a3e in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git reset --hard 7dca039a1b86d9de941d1693c6a95914fca42442
+DEBUG: ran git reset --hard 7dca039a1b86d9de941d1693c6a95914fca42442 in 
 DEBUG: LC_ALL=C JX_LOG_LEVEL=error git clean -fd .
 DEBUG: ran clean --force -d . in 
-DEBUG: LC_ALL=C JX_LOG_LEVEL=error git merge ac9542bf1c9fd39e2063824c60fd314144085a33
-DEBUG: ran git merge ac9542bf1c9fd39e2063824c60fd314144085a33 in 
-DEBUG: LC_ALL=C JX_LOG_LEVEL=error git log --format=%H%x1f%an%x1f%ae%x1f%cn%x1f%ce%x1f%s%n%b%x1e 479d0c2a33eccd8b20c08dec38f6258da01a3a3e..HEAD
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git merge 73124d0eab5cd3003c02b099f246eb7c3b769026
+DEBUG: ran git merge 73124d0eab5cd3003c02b099f246eb7c3b769026 in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git log --format=%H%x1f%an%x1f%ae%x1f%cn%x1f%ce%x1f%s%n%b%x1e 7dca039a1b86d9de941d1693c6a95914fca42442..HEAD
+Merged SHA 8f06386483a4095679f1a4821b43c9be846b8cef with commit message 'Merge commit '73124d0eab5cd3003c02b099f246eb7c3b769026'' into base branch master
+Merged SHA 73124d0eab5cd3003c02b099f246eb7c3b769026 with commit message 'test2' into base branch master
 Merged SHA ac9542bf1c9fd39e2063824c60fd314144085a33 with commit message 'test1' into base branch master
 
-Showing logs for build [32mromanrzes-quickstart-test-jx-pr-jkftg-1[0m stage [32mrun-make[0m and container [32mstep-build-make-linux[0m
+Showing logs for build [32mromanrzes-quickstart-test-jx-pr-m856t-1[0m stage [32mrun-make[0m and container [32mstep-build-make-linux[0m
 CGO_ENABLED=0 GOOS=linux GOARCH=amd64 GO15VENDOREXPERIMENT=1 go build -ldflags '' -o bin/quickstart-test-** main.go
 
-Showing logs for build [32mromanrzes-quickstart-test-jx-pr-jkftg-1[0m stage [32mrun-make[0m and container [32mstep-source-mkdir-romanrzes-quickstart-test-jx-pr-jkftg-ddqrz[0m
-{"level":"warn","ts":1587137155.7610207,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
-{"level":"info","ts":1587137155.764765,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /pvc/run-make/workspace\"; output "}
+Showing logs for build [32mromanrzes-quickstart-test-jx-pr-m856t-1[0m stage [32mrun-make[0m and container [32mstep-source-mkdir-romanrzes-quickstart-test-jx-pr-m856t-5rvbp[0m
+{"level":"warn","ts":1587138767.4503913,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1587138767.4534059,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /pvc/run-make/workspace\"; output "}
 
-Showing logs for build [32mromanrzes-quickstart-test-jx-pr-jkftg-1[0m stage [32mrun-make[0m and container [32mstep-source-copy-romanrzes-quickstart-test-jx-pr-jkftg-lkrfx[0m
-{"level":"warn","ts":1587137155.9857368,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
-{"level":"info","ts":1587137156.0026104,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c cp -r source/. /pvc/run-make/workspace\"; output "}
+Showing logs for build [32mromanrzes-quickstart-test-jx-pr-m856t-1[0m stage [32mrun-make[0m and container [32mstep-source-copy-romanrzes-quickstart-test-jx-pr-m856t-2875w[0m
+{"level":"warn","ts":1587138767.7015834,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1587138767.719099,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c cp -r source/. /pvc/run-make/workspace\"; output "}
 
-Showing logs for build [32mromanrzes-quickstart-test-jx-pr-jkftg-1[0m stage [32meverything-else[0m and container [32mstep-credential-initializer-kzn9x[0m
-{"level":"warn","ts":1587137158.8433912,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1587137158.8440363,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Showing logs for build [32mromanrzes-quickstart-test-jx-pr-m856t-1[0m stage [32meverything-else[0m and container [32mstep-credential-initializer-f8r65[0m
+{"level":"warn","ts":1587138786.8427842,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1587138786.8435893,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
 
-Showing logs for build [32mromanrzes-quickstart-test-jx-pr-jkftg-1[0m stage [32meverything-else[0m and container [32mstep-working-dir-initializer-sck2q[0m
-{"level":"warn","ts":1587137160.1261806,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
-{"level":"info","ts":1587137160.128768,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+Showing logs for build [32mromanrzes-quickstart-test-jx-pr-m856t-1[0m stage [32meverything-else[0m and container [32mstep-working-dir-initializer-rvjlf[0m
+{"level":"warn","ts":1587138787.3905244,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1587138787.3915966,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
 
-Showing logs for build [32mromanrzes-quickstart-test-jx-pr-jkftg-1[0m stage [32meverything-else[0m and container [32mstep-place-tools[0m
+Showing logs for build [32mromanrzes-quickstart-test-jx-pr-m856t-1[0m stage [32meverything-else[0m and container [32mstep-place-tools[0m
 
-Showing logs for build [32mromanrzes-quickstart-test-jx-pr-jkftg-1[0m stage [32meverything-else[0m and container [32mstep-create-dir-workspace-rrglc[0m
-{"level":"warn","ts":1587137168.2623303,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
-{"level":"info","ts":1587137168.2636354,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+Showing logs for build [32mromanrzes-quickstart-test-jx-pr-m856t-1[0m stage [32meverything-else[0m and container [32mstep-create-dir-workspace-s5bgq[0m
+{"level":"warn","ts":1587138793.5750132,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1587138793.5760627,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
 
-Showing logs for build [32mromanrzes-quickstart-test-jx-pr-jkftg-1[0m stage [32meverything-else[0m and container [32mstep-source-copy-workspace-q67ql[0m
-{"level":"warn","ts":1587137168.4864717,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
-{"level":"info","ts":1587137168.5846078,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c cp -r /pvc/run-make/workspace/. /workspace/source\"; output "}
+Showing logs for build [32mromanrzes-quickstart-test-jx-pr-m856t-1[0m stage [32meverything-else[0m and container [32mstep-source-copy-workspace-h844l[0m
+{"level":"warn","ts":1587138793.7993383,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1587138793.9193842,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c cp -r /pvc/run-make/workspace/. /workspace/source\"; output "}
 
-Showing logs for build [32mromanrzes-quickstart-test-jx-pr-jkftg-1[0m stage [32meverything-else[0m and container [32mstep-build-container-build[0m
-ERROR: logging before flag.Parse: E0417 15:26:09.293885      12 metadata.go:241] Failed to unmarshal scopes: invalid character 'h' looking for beginning of value
+Showing logs for build [32mromanrzes-quickstart-test-jx-pr-m856t-1[0m stage [32meverything-else[0m and container [32mstep-build-container-build[0m
+ERROR: logging before flag.Parse: E0417 15:53:14.303153      12 metadata.go:241] Failed to unmarshal scopes: invalid character 'h' looking for beginning of value
 [36mINFO[0m[0000] No base image, nothing to extract            
 [36mINFO[0m[0000] cmd: EXPOSE                                  
 [36mINFO[0m[0000] Adding exposed port: 8080/tcp                
@@ -79,6 +81,6 @@ ERROR: logging before flag.Parse: E0417 15:26:09.293885      12 metadata.go:241]
 [36mINFO[0m[0000] Using files from context: [/workspace/source/bin] 
 [36mINFO[0m[0000] COPY ./bin/ /                                
 [36mINFO[0m[0000] Taking snapshot of files...                  
-error pushing image: failed to push to destination gcr.io/dark-arcade-274513/quickstart-test-**:0.0.0-SNAPSHOT-PR-1-1: DENIED: Access denied.
+error pushing image: failed to push to destination gcr.io/livewyer-ops/quickstart-test-**:0.0.0-SNAPSHOT-PR-1-1: DENIED: Token exchange failed for project 'livewyer-ops'. Caller does not have permission 'storage.buckets.get'. To configure permissions, follow instructions at: https://cloud.google.com/container-registry/docs/access-control
 [31m
 Pipeline failed on stage 'everything-else' : container 'step-build-container-build'. The execution of the pipeline has stopped.[0m
