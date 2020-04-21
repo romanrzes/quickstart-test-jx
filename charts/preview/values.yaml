@@ -20,3 +20,9 @@ preview:
     repository:
     tag:
     pullPolicy: IfNotPresent
+
+jenkins:
+  Servers:
+    Global:
+      EnvVars:
+        DOCKER_REGISTRY: "gcr.io"
