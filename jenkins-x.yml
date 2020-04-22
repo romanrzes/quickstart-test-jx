@@ -48,6 +48,8 @@ pipelineConfig:
             name: build-make-build
         - name: everything-else
           steps:
+          - command: gcloud auth configure-docker
+ 29         name: authorization gcloud
           - args:
             - --cache=true
             - --cache-dir=/workspace
