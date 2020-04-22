@@ -57,7 +57,7 @@ pipelineConfig:
             - --cache-repo=gcr.io/dark-arcade-274513/cache
             command: /kaniko/executor
             dir: /workspace/source
-            image: gcr.io/kaniko-project/executor:v0.1.0
+            image: gcr.io/kaniko-project/executor:latest
             name: build-container-build
           - command: jx step post build --image gcr.io/dark-arcade-274513/quickstart-test-jx:${VERSION}
             name: build-post-build
