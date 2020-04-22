@@ -25,6 +25,8 @@ pipelineConfig:
             dir: /workspace/source
             image: gcr.io/kaniko-project/executor:9912ccbf8d22bbafbf971124600fbb0b13b9cbd6
             name: build-container-build
+          - command: gcloud auth configure-docker
+            name: authorization gcloud
           - command: jx step post build --image gcr.io/dark-arcade-274513/quickstart-test-jx:$PREVIEW_VERSION
             name: postbuild-post-build
           - command: make preview
