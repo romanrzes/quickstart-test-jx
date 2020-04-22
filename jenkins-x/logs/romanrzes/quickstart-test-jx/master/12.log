@@ -1,0 +1,80 @@
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-ma-vmb8m-12[0m stage [32mrun-make[0m and container [32mstep-credential-initializer-m6srw[0m
+{"level":"warn","ts":1587563221.2342665,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1587563221.2351623,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-ma-vmb8m-12[0m stage [32mrun-make[0m and container [32mstep-working-dir-initializer-65t6l[0m
+{"level":"warn","ts":1587563221.5945313,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1587563221.5958674,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-ma-vmb8m-12[0m stage [32mrun-make[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-ma-vmb8m-12[0m stage [32mrun-make[0m and container [32mstep-create-dir-workspace-qhn85[0m
+{"level":"warn","ts":1587563227.6728542,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1587563227.6745267,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p source\"; output "}
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-ma-vmb8m-12[0m stage [32mrun-make[0m and container [32mstep-git-source-romanrzes-quickstart-test-jx-ma-vmb8m-vfg59[0m
+{"level":"warn","ts":1587563227.926607,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1587563229.0177805,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/quickstart-test-**.git @ v0.0.13 in path /workspace/source"}
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-ma-vmb8m-12[0m stage [32mrun-make[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:5d39c1c17225708da3c314f25e1e9384d10fda3a
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-ma-vmb8m-12[0m stage [32mrun-make[0m and container [32mstep-setup-jx-git-credentials[0m
+failed to get helm version: failed to run 'helm version --short' command in directory '', output: 'Client: v2.14.3+g0e7f3b6
+Error: could not find tiller'
+old helm binary on the PATH so replacing with helm 3
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/**r-versions.git with ref refs/heads/master to /builder/home/.**/jenkins-x-versions
+Generated Git credentials file /workspace/xdg_config/git/credentials
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-ma-vmb8m-12[0m stage [32mrun-make[0m and container [32mstep-build-make-build[0m
+CGO_ENABLED=0 GO15VENDOREXPERIMENT=1 go build -ldflags '' -o bin/quickstart-test-** main.go
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-ma-vmb8m-12[0m stage [32mrun-make[0m and container [32mstep-source-mkdir-romanrzes-quickstart-test-jx-ma-vmb8m-clhsg[0m
+{"level":"warn","ts":1587563236.9106863,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1587563236.9133246,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /pvc/run-make/workspace\"; output "}
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-ma-vmb8m-12[0m stage [32mrun-make[0m and container [32mstep-source-copy-romanrzes-quickstart-test-jx-ma-vmb8m-bjbmq[0m
+{"level":"warn","ts":1587563237.1425676,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1587563237.1590428,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c cp -r source/. /pvc/run-make/workspace\"; output "}
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-ma-vmb8m-12[0m stage [32meverything-else[0m and container [32mstep-credential-initializer-84gkg[0m
+{"level":"warn","ts":1587563239.5303497,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1587563239.5308812,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-ma-vmb8m-12[0m stage [32meverything-else[0m and container [32mstep-working-dir-initializer-2xjn8[0m
+{"level":"warn","ts":1587563240.8419526,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1587563240.8432956,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-ma-vmb8m-12[0m stage [32meverything-else[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-ma-vmb8m-12[0m stage [32meverything-else[0m and container [32mstep-create-dir-workspace-4ptxz[0m
+{"level":"warn","ts":1587563248.8982008,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1587563248.8998146,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-ma-vmb8m-12[0m stage [32meverything-else[0m and container [32mstep-source-copy-workspace-tjb6p[0m
+{"level":"warn","ts":1587563249.1286972,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1587563249.2620084,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c cp -r /pvc/run-make/workspace/. /workspace/source\"; output "}
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-ma-vmb8m-12[0m stage [32meverything-else[0m and container [32mstep-build-container-build[0m
+Error: unknown flag: --cache
+Usage:
+  executor [flags]
+
+Flags:
+  -b, --bucket string              Name of the GCS bucket from which to access build context as tarball.
+      --build-arg build-arg type   This flag allows you to pass in ARG values at build time. Set it repeatedly for multiple values.
+  -c, --context string             Path to the dockerfile build context. (default "/workspace/")
+  -d, --destination string         Registry the final image should be pushed to (ex: gcr.io/test/example:latest)
+  -f, --dockerfile string          Path to the dockerfile to be built. (default "Dockerfile")
+      --force                      Force building outside of a container
+  -h, --help                       help for executor
+      --insecure-skip-tls-verify   Push to insecure registry ignoring TLS verify
+      --snapshotMode string        Set this flag to change the file attributes inspected during snapshotting (default "full")
+      --tarPath string             Path to save the image in as a tarball instead of pushing
+  -v, --verbosity string           Log level (debug, info, warn, error, fatal, panic (default "info")
+
+unknown flag: --cache
+[31m
+Pipeline failed on stage 'everything-else' : container 'step-build-container-build'. The execution of the pipeline has stopped.[0m
