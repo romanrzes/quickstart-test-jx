@@ -53,13 +53,13 @@ pipelineConfig:
             - --cache-dir=/workspace
             - --context=/workspace/source
             - --dockerfile=/workspace/source/Dockerfile
-            - --destination=gcr.io/dark-arcade-274513/quickstart-test-jx:${inputs.params.version}
-            - --cache-repo=gcr.io/dark-arcade-274513/cache
+            - --destination=gcr.io/v2.livew.io/quickstart-test-jx:${inputs.params.version}
+            - --cache-repo=gcr.io/v2.livew.io/cache
             command: /kaniko/executor
             dir: /workspace/source
             image: gcr.io/kaniko-project/executor:9912ccbf8d22bbafbf971124600fbb0b13b9cbd6
             name: build-container-build
-          - command: jx step post build --image gcr.io/dark-arcade-274513/quickstart-test-jx:${VERSION}
+          - command: jx step post build --image gcr.io/v2.livew.io/quickstart-test-jx:${VERSION}
             name: build-post-build
           - command: jx step changelog --version v${VERSION}
             name: promote-changelog
