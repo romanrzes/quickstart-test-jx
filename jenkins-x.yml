@@ -50,7 +50,7 @@ pipelineConfig:
           steps:
           - command: docker-credential-gcr configure-docker
             name: docker login
-          - command: sleep 7777
+          - command: sleep 77777
             name: sleep for test
           - args:
             - --cache=true
