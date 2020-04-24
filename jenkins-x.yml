@@ -48,12 +48,6 @@ pipelineConfig:
             name: build-make-build
         - name: everything-else
           steps:
-          - command: docker-credential-gcr configure-docker
-            name: docker login
-          - command: sleep 77777
-            name: sleep 77777
-          - command: export DOCKER_REGISTRY=gcr.io
-            name: export
           - args:
             - --cache=true
             - --cache-dir=/workspace
