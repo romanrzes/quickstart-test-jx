@@ -48,8 +48,8 @@ pipelineConfig:
             name: build-make-build
         - name: everything-else
           steps:
-          - name:
-            command: docker-credential-gcr configure-docker
+          - command: docker-credential-gcr configure-docker
+            name: docker login
           - args:
             - --cache=true
             - --cache-dir=/workspace
