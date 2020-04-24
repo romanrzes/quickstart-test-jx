@@ -4,8 +4,8 @@
 replicaCount: 1
 opa: 7
 image:
-  repository: draft
-  tag: dev
+  repository: gcr.io/dark-arcade-274513/quickstart-test-jx
+  tag: 0.0.29
   pullPolicy: IfNotPresent
 
 # define environment variables here as a map of key: value
