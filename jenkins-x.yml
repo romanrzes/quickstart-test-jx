@@ -37,6 +37,14 @@ pipelineConfig:
             name: promote-jx-preview
     release:
       pipeline:
+        options:
+          containerOptions:
+            env:
+            - name: DOCKER_REGISTRY
+              valueFrom:
+                configMapKeyRef:
+                  key: docker.registry
+                  name: jenkins-x-docker-registry
         agent:
           image: go
         stages:
