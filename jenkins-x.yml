@@ -55,17 +55,6 @@ pipelineConfig:
                 configMapKeyRef:
                   key: docker.registry
                   name: jenkins-x-docker-registry
-          options:
-              volumes:
-                - name: kaniko-secret
-                  secret:
-                    secretName: kaniko-secret
-                    items:
-                      - key: kaniko-secret.json
-              containerOptions:
-                volumeMounts:
-                  - name: kaniko-secret
-                    mountPath: /secrets
           steps:
           - args:
             - --cache=true
