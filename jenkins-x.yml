@@ -60,6 +60,10 @@ pipelineConfig:
                 - name: kaniko-secret
                   secret:
                     secretName: kaniko-secret
+              containerOptions:
+                volumeMounts:
+                  - name: kaniko-secret
+                    mountPath: /secrets
           steps:
           - args:
             - --cache=true
