@@ -55,6 +55,9 @@ pipelineConfig:
           - command: make build
             name: build-make-build
         - name: everything-else
+          environment: 
+            - name: GOOGLE_APPLICATION_CREDENTIALS
+              value: /secrets/kaniko/kaniko-secret.json
           steps:
           - args:
             - --cache=true
