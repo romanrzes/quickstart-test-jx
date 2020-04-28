@@ -1,0 +1,27 @@
+
+Showing logs for build [32mmeta-romanrzes-quickstart-test-n87jz-46[0m stage [32mmeta-pipeline[0m and container [32mstep-credential-initializer-mht22[0m
+{"level":"warn","ts":1588086504.2480674,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1588086504.2485044,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mmeta-romanrzes-quickstart-test-n87jz-46[0m stage [32mmeta-pipeline[0m and container [32mstep-working-dir-initializer-86zsv[0m
+{"level":"warn","ts":1588086505.4932547,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1588086505.4947762,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mmeta-romanrzes-quickstart-test-n87jz-46[0m stage [32mmeta-pipeline[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mmeta-romanrzes-quickstart-test-n87jz-46[0m stage [32mmeta-pipeline[0m and container [32mstep-git-source-meta-romanrzes-quickstart-test-n87jz-7n42b[0m
+{"level":"warn","ts":1588086511.5680487,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1588086512.6781068,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/quickstart-test-**.git @ e71420ba77b3511ba4b46814a645a1425d735652 in path /workspace/source"}
+
+Showing logs for build [32mmeta-romanrzes-quickstart-test-n87jz-46[0m stage [32mmeta-pipeline[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:e71420ba77b3511ba4b46814a645a1425d735652
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mmeta-romanrzes-quickstart-test-n87jz-46[0m stage [32mmeta-pipeline[0m and container [32mstep-merge-pull-refs[0m
+SKIP merge-pull-refs: Nothing to merge
+
+Showing logs for build [32mmeta-romanrzes-quickstart-test-n87jz-46[0m stage [32mmeta-pipeline[0m and container [32mstep-create-effective-pipeline[0m
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/**r-versions.git with ref refs/heads/master to /builder/home/.**/jenkins-x-versions
+error: failed to load project config in dir /workspace/source: failed to validate YAML file /workspace/source/jenkins-x.yml due to yaml: line 16: did not find expected key
+[31m
+Pipeline failed on stage 'meta-pipeline' : container 'step-create-effective-pipeline'. The execution of the pipeline has stopped.[0m
