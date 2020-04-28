@@ -57,7 +57,7 @@ pipelineConfig:
         - name: everything-else
           environment: 
             - name: GOOGLE_APPLICATION_CREDENTIALS
-              value: /secret/kaniko-secret.json
+              value: /kaniko-secret.json
             - name: DOCKER_REGISTRY
               valueFrom:
                 configMapKeyRef:
