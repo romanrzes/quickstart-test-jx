@@ -57,7 +57,12 @@ pipelineConfig:
         - name: everything-else
           environment: 
             - name: GOOGLE_APPLICATION_CREDENTIALS
-              value: /secrets/kaniko/kaniko-secret.json
+              value: /secrets/kaniko-secret.json
+            - name: DOCKER_REGISTRY
+              valueFrom:
+                configMapKeyRef:
+                  key: docker.registry
+                  name: jenkins-x-docker-registry
           steps:
           - args:
             - --cache=true
