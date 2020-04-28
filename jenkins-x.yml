@@ -13,6 +13,23 @@ pipelineConfig:
           - command: make linux
             name: build-make-linux
         - name: everything-else
+          environment:
+ 51             - name: GOOGLE_APPLICATION_CREDENTIALS
+ 52               value: /secrets/kaniko-secret.json
+ 53             - name: DOCKER_REGISTRY
+ 54               valueFrom:
+ 55                 configMapKeyRef:
+ 56                   key: docker.registry
+ 57                   name: jenkins-x-docker-registry
+ 58           options:
+ 59               volumes:
+ 60                 - name: kaniko-secret
+ 61                   secret:
+ 62                     secretName: kaniko-secret
+ 63               containerOptions:
+ 64                 volumeMounts:
+ 65                   - name: kaniko-secret
+ 66                     mountPath: /secrets
           steps:
           - args:
             - --cache=true
