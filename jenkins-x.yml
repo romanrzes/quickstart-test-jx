@@ -37,14 +37,6 @@ pipelineConfig:
             name: promote-jx-preview
     release:
       pipeline:
-        options:
-          containerOptions:
-            env:
-            - name: DOCKER_REGISTRY
-              valueFrom:
-                configMapKeyRef:
-                  key: docker.registry
-                  name: jenkins-x-docker-registry
         agent:
           image: go
         stages:
@@ -57,12 +49,24 @@ pipelineConfig:
         - name: everything-else
           environment: 
             - name: GOOGLE_APPLICATION_CREDENTIALS
-              value: /kaniko-secret.json
+              value: /secrets/kaniko-secret.json
             - name: DOCKER_REGISTRY
               valueFrom:
                 configMapKeyRef:
                   key: docker.registry
                   name: jenkins-x-docker-registry
+          options:
+              volumes:
+                - name: kaniko-secret
+                  secret:
+                    secretName: kaniko-secret
+                    items:
+                      - key: kaniko-secret
+                        path: kaniko/kaniko-secret.json
+              containerOptions:
+                volumeMounts:
+                  - name: kaniko-secret
+                    mountPath: /secrets
           steps:
           - args:
             - --cache=true
