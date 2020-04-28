@@ -1,0 +1,126 @@
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-ma-2cb84-45[0m stage [32mrun-make[0m and container [32mstep-credential-initializer-kbkm7[0m
+{"level":"warn","ts":1588067532.5508292,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1588067532.5515468,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-ma-2cb84-45[0m stage [32mrun-make[0m and container [32mstep-working-dir-initializer-tkfjj[0m
+{"level":"warn","ts":1588067533.6040304,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1588067533.6057656,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-ma-2cb84-45[0m stage [32mrun-make[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-ma-2cb84-45[0m stage [32mrun-make[0m and container [32mstep-create-dir-workspace-d4d4h[0m
+{"level":"warn","ts":1588067539.746883,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1588067539.7489066,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p source\"; output "}
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-ma-2cb84-45[0m stage [32mrun-make[0m and container [32mstep-git-source-romanrzes-quickstart-test-jx-ma-2cb84-99pqt[0m
+{"level":"warn","ts":1588067540.016949,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1588067541.161671,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/quickstart-test-**.git @ v0.0.45 in path /workspace/source"}
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-ma-2cb84-45[0m stage [32mrun-make[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:c7e256eaaf93f0ff7fc31d7673c92feb876d79a7
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-ma-2cb84-45[0m stage [32mrun-make[0m and container [32mstep-setup-jx-git-credentials[0m
+failed to get helm version: failed to run 'helm version --short' command in directory '', output: 'Client: v2.14.3+g0e7f3b6
+Error: could not find tiller'
+old helm binary on the PATH so replacing with helm 3
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/**r-versions.git with ref refs/heads/master to /builder/home/.**/jenkins-x-versions
+Generated Git credentials file /workspace/xdg_config/git/credentials
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-ma-2cb84-45[0m stage [32mrun-make[0m and container [32mstep-build-make-build[0m
+CGO_ENABLED=0 GO15VENDOREXPERIMENT=1 go build -ldflags '' -o bin/quickstart-test-** main.go
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-ma-2cb84-45[0m stage [32mrun-make[0m and container [32mstep-source-mkdir-romanrzes-quickstart-test-jx-ma-2cb84-wlw4b[0m
+{"level":"warn","ts":1588067549.0843399,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1588067549.0873957,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /pvc/run-make/workspace\"; output "}
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-ma-2cb84-45[0m stage [32mrun-make[0m and container [32mstep-source-copy-romanrzes-quickstart-test-jx-ma-2cb84-6mnrr[0m
+{"level":"warn","ts":1588067549.3610404,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1588067549.3850708,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c cp -r source/. /pvc/run-make/workspace\"; output "}
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-ma-2cb84-45[0m stage [32meverything-else[0m and container [32mstep-credential-initializer-vzdx2[0m
+{"level":"warn","ts":1588067552.8307536,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1588067552.8316321,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-ma-2cb84-45[0m stage [32meverything-else[0m and container [32mstep-working-dir-initializer-8hs97[0m
+{"level":"warn","ts":1588067554.1918366,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1588067554.1936748,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-ma-2cb84-45[0m stage [32meverything-else[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-ma-2cb84-45[0m stage [32meverything-else[0m and container [32mstep-create-dir-workspace-85tqf[0m
+{"level":"warn","ts":1588067560.3171475,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1588067560.3193529,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-ma-2cb84-45[0m stage [32meverything-else[0m and container [32mstep-source-copy-workspace-57ttx[0m
+{"level":"warn","ts":1588067560.5728292,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1588067560.6577582,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c cp -r /pvc/run-make/workspace/. /workspace/source\"; output "}
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-ma-2cb84-45[0m stage [32meverything-else[0m and container [32mstep-build-container-build[0m
+ERROR: logging before flag.Parse: E0428 09:52:41.081459      11 metadata.go:241] Failed to unmarshal scopes: invalid character 'h' looking for beginning of value
+[36mINFO[0m[0000] No base image, nothing to extract            
+[36mINFO[0m[0000] cmd: EXPOSE                                  
+[36mINFO[0m[0000] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0000] Using files from context: [/workspace/source/bin] 
+[36mINFO[0m[0000] Skipping unpacking as no commands require it. 
+[36mINFO[0m[0000] Taking snapshot of full filesystem...        
+[36mINFO[0m[0000] EXPOSE 8080                                  
+[36mINFO[0m[0000] cmd: EXPOSE                                  
+[36mINFO[0m[0000] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0000] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0000] ENTRYPOINT ["/quickstart-test-**"]           
+[36mINFO[0m[0000] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0000] Using files from context: [/workspace/source/bin] 
+[36mINFO[0m[0000] COPY ./bin/ /                                
+[36mINFO[0m[0000] Taking snapshot of files...                  
+2020/04/28 09:52:45 pushed blob: sha256:158a78bfb89a528ba120e11a32f0d748e8c476aa3d1b121d95157be47396eb9e
+2020/04/28 09:52:45 pushed blob: sha256:063aa9cd795651f6d6784c413e1aae2b0c195d30ead7464e63122a8f3fe5fb18
+2020/04/28 09:52:47 gcr.io/dark-arcade-274513/quickstart-test-**:0.0.45: digest: sha256:3ce8b72571cea58fa8c7108ddb217b8a08cae0e5c61e78d954290f86ed019e09 size: 428
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-ma-2cb84-45[0m stage [32meverything-else[0m and container [32mstep-build-post-build[0m
+no CVE provider running in the current ** namespace so skip adding image to be analysed
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-ma-2cb84-45[0m stage [32meverything-else[0m and container [32mstep-promote-changelog[0m
+Converted /workspace/source to an unshallow repository
+Generating change log from git ref c13a6377cb39f2d6398a4052ed14783203a6929d => 127057c1c84d8b1de7b1b8bd56e99af9c6874bdd
+Associating user x-0 in users.jenkins.io with email roman@livewyer.com to git GitProvider user with login -0 as emails match
+Adding label jenkins.io/git-github-userid=-0 to user x-0 in users.jenkins.io
+WARNING: Failed to enrich commit c7e256eaaf93f0ff7fc31d7673c92feb876d79a7 with issues: User.jenkins.io "x-0" is invalid: metadata.labels: Invalid value: "-0": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?')
+Associating user x-0 in users.jenkins.io with email roman@livewyer.com to git GitProvider user with login -0 as emails match
+Adding label jenkins.io/git-github-userid=-0 to user x-0 in users.jenkins.io
+WARNING: Failed to enrich commit c7e256eaaf93f0ff7fc31d7673c92feb876d79a7 with issues: User.jenkins.io "x-0" is invalid: metadata.labels: Invalid value: "-0": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?')
+Finding issues in commit messages using git format
+WARNING: No release found for *********/quickstart-test-** and tag v0.0.45 so creating a new release
+Updated the release information at https://github.com/*********/quickstart-test-**/releases/tag/v0.0.45
+generated: /workspace/source/charts/quickstart-test-**/templates/release.yaml
+Created Release quickstart-test-**-0-0-45 resource in namespace **
+Updating PipelineActivity *********-quickstart-test-**-master-45 with version 0.0.45
+Updated PipelineActivities *********-quickstart-test-**-master-45 with release notes URL: https://github.com/*********/quickstart-test-**/releases/tag/v0.0.45
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-ma-2cb84-45[0m stage [32meverything-else[0m and container [32mstep-promote-helm-release[0m
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Uploading chart file quickstart-test-**-0.0.45.tgz to http://jenkins-x-chartmuseum:8080/api/charts
+Received 201 response: {"saved":true}
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-ma-2cb84-45[0m stage [32meverything-else[0m and container [32mstep-promote-jx-promote[0m
+failed to get helm version: failed to run 'helm version --short' command in directory '', output: 'Client: v2.14.3+g0e7f3b6
+Error: could not find tiller'
+old helm binary on the PATH so replacing with helm 3
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/**r-versions.git with ref refs/heads/master to /builder/home/.**/jenkins-x-versions
+WARNING: prow based install so skip waiting for the merge of Pull Requests to go green as currently there is an issue with gettingstatuses from the PR, see https://github.com/jenkins-x/**/issues/2410
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Promoting app quickstart-test-** version 0.0.45 to namespace **-staging
+WARNING: 
+Created Pull Request: https://github.com/*********/environment-test-cluster-staging/pull/7
+Added label updatebot to Pull Request https://github.com/*********/environment-test-cluster-staging/pull/7
+got git provider status pending from PR https://github.com/*********/environment-test-cluster-staging/pull/7
+got git provider status pending from PR https://github.com/*********/environment-test-cluster-staging/pull/7
+got git provider status pending from PR https://github.com/*********/environment-test-cluster-staging/pull/7
+Pull Request https://github.com/*********/environment-test-cluster-staging/pull/7 is merged at sha 45b14b19c933cce8e0967d23ec5ea3e43cbdc33f
+Pull Request merged but we are not waiting for the update pipeline to complete!
