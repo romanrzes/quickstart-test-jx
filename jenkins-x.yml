@@ -61,8 +61,7 @@ pipelineConfig:
                   secret:
                     secretName: kaniko-secret
                     items:
-                      - key: kaniko-secret
-                        path: kaniko/kaniko-secret.json
+                      - key: kaniko-secret.json
               containerOptions:
                 volumeMounts:
                   - name: kaniko-secret
