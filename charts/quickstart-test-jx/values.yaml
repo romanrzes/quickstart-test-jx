@@ -77,7 +77,7 @@ ingress:
 # values we use from the `jx-requirements.yml` file if we are using helmfile and helm 3
 jxRequirements:
   ingress:
-    domain: "<my-ip-addr>.nip.io"
+    domain: ""
     externalDNS: false
     namespaceSubDomain: -jx.
     serviceType: ""
