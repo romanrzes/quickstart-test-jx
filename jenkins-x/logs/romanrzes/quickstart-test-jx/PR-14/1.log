@@ -1,0 +1,140 @@
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-pr-wzkx7-1[0m stage [32mrun-make[0m and container [32mstep-credential-initializer-s6l4t[0m
+{"level":"warn","ts":1588168583.7549572,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1588168583.755602,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-pr-wzkx7-1[0m stage [32mrun-make[0m and container [32mstep-working-dir-initializer-dhrb5[0m
+{"level":"warn","ts":1588168584.2382517,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1588168584.2396665,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-pr-wzkx7-1[0m stage [32mrun-make[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-pr-wzkx7-1[0m stage [32mrun-make[0m and container [32mstep-create-dir-workspace-bcpzx[0m
+{"level":"warn","ts":1588168590.4774387,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1588168590.4796786,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p source\"; output "}
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-pr-wzkx7-1[0m stage [32mrun-make[0m and container [32mstep-git-source-romanrzes-quickstart-test-jx-pr-wzkx7-57fwc[0m
+{"level":"warn","ts":1588168590.7802699,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1588168591.9390407,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/quickstart-test-**.git @ master in path /workspace/source"}
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-pr-wzkx7-1[0m stage [32mrun-make[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:9e9fb51001dffbaf0f1d67f3d2063e335c728a36,14:18f0c38ee1a58efdfd90e1d11a94fb4e4386305a
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git fetch origin --unshallow 18f0c38ee1a58efdfd90e1d11a94fb4e4386305a: 9e9fb51001dffbaf0f1d67f3d2063e335c728a36:
+DEBUG: ran git fetch --unshallow origin 18f0c38ee1a58efdfd90e1d11a94fb4e4386305a: 9e9fb51001dffbaf0f1d67f3d2063e335c728a36: in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git branch
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git checkout master
+DEBUG: ran git checkout master in 
+DEBUG: JX_LOG_LEVEL=error LC_ALL=C git reset --hard 9e9fb51001dffbaf0f1d67f3d2063e335c728a36
+DEBUG: ran git reset --hard 9e9fb51001dffbaf0f1d67f3d2063e335c728a36 in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git clean -fd .
+DEBUG: ran clean --force -d . in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git merge 18f0c38ee1a58efdfd90e1d11a94fb4e4386305a
+DEBUG: ran git merge 18f0c38ee1a58efdfd90e1d11a94fb4e4386305a in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git log --format=%H%x1f%an%x1f%ae%x1f%cn%x1f%ce%x1f%s%n%b%x1e 9e9fb51001dffbaf0f1d67f3d2063e335c728a36..HEAD
+Merged SHA 5c6dd2bc22ab43d8cff3d256e8a6fb4c557d6d04 with commit message 'Merge commit '18f0c38ee1a58efdfd90e1d11a94fb4e4386305a'' into base branch master
+Merged SHA 18f0c38ee1a58efdfd90e1d11a94fb4e4386305a with commit message 'opa > 11' into base branch master
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-pr-wzkx7-1[0m stage [32mrun-make[0m and container [32mstep-build-make-linux[0m
+CGO_ENABLED=0 GOOS=linux GOARCH=amd64 GO15VENDOREXPERIMENT=1 go build -ldflags '' -o bin/quickstart-test-** main.go
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-pr-wzkx7-1[0m stage [32mrun-make[0m and container [32mstep-source-mkdir-romanrzes-quickstart-test-jx-pr-wzkx7-swz6h[0m
+{"level":"warn","ts":1588168599.609259,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1588168599.6121225,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /pvc/run-make/workspace\"; output "}
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-pr-wzkx7-1[0m stage [32mrun-make[0m and container [32mstep-source-copy-romanrzes-quickstart-test-jx-pr-wzkx7-dxt4f[0m
+{"level":"warn","ts":1588168599.8958132,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1588168599.9155233,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c cp -r source/. /pvc/run-make/workspace\"; output "}
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-pr-wzkx7-1[0m stage [32meverything-else[0m and container [32mstep-credential-initializer-vrzzf[0m
+{"level":"warn","ts":1588168611.5527236,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1588168611.5532699,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-pr-wzkx7-1[0m stage [32meverything-else[0m and container [32mstep-working-dir-initializer-f44lt[0m
+{"level":"warn","ts":1588168612.617683,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1588168612.619305,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-pr-wzkx7-1[0m stage [32meverything-else[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-pr-wzkx7-1[0m stage [32meverything-else[0m and container [32mstep-create-dir-workspace-p46zd[0m
+{"level":"warn","ts":1588168618.8750262,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1588168618.8770795,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-pr-wzkx7-1[0m stage [32meverything-else[0m and container [32mstep-source-copy-workspace-t9t7n[0m
+{"level":"warn","ts":1588168619.1389482,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1588168619.2549717,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c cp -r /pvc/run-make/workspace/. /workspace/source\"; output "}
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-pr-wzkx7-1[0m stage [32meverything-else[0m and container [32mstep-build-container-build[0m
+ERROR: logging before flag.Parse: E0429 13:56:59.687751      12 metadata.go:241] Failed to unmarshal scopes: invalid character 'h' looking for beginning of value
+[36mINFO[0m[0000] No base image, nothing to extract            
+[36mINFO[0m[0000] cmd: EXPOSE                                  
+[36mINFO[0m[0000] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0000] Using files from context: [/workspace/source/bin] 
+[36mINFO[0m[0000] Skipping unpacking as no commands require it. 
+[36mINFO[0m[0000] Taking snapshot of full filesystem...        
+[36mINFO[0m[0000] EXPOSE 8080                                  
+[36mINFO[0m[0000] cmd: EXPOSE                                  
+[36mINFO[0m[0000] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0000] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0000] ENTRYPOINT ["/quickstart-test-**"]           
+[36mINFO[0m[0000] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0000] Using files from context: [/workspace/source/bin] 
+[36mINFO[0m[0000] COPY ./bin/ /                                
+[36mINFO[0m[0000] Taking snapshot of files...                  
+2020/04/29 13:57:03 pushed blob: sha256:0be6cfca56af6a14b9a27867ff0b236e9e8896a37d85c345c847c2176c0fd3b7
+2020/04/29 13:57:03 pushed blob: sha256:c7fb993fa74ee796f5367790f1313b408d5a78b6629f20f5b1b209d1bde9ec4c
+2020/04/29 13:57:05 gcr.io/dark-arcade-274513/quickstart-test-**:0.0.0-SNAPSHOT-PR-14-1: digest: sha256:781f8f316c6ea4f55053b5af8f3dd0b3cf22219cc5ca911b937345e2ac4665a7 size: 428
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-pr-wzkx7-1[0m stage [32meverything-else[0m and container [32mstep-authorization-gcloud[0m
+The following settings will be added to your Docker config file 
+located at [/builder/home/.docker/config.json]:
+ {
+  "credHelpers": {
+    "gcr.io": "gcloud", 
+    "us.gcr.io": "gcloud", 
+    "eu.gcr.io": "gcloud", 
+    "asia.gcr.io": "gcloud", 
+    "staging-k8s.gcr.io": "gcloud", 
+    "marketplace.gcr.io": "gcloud"
+  }
+}
+
+Do you want to continue (Y/n)?  
+Docker configuration file updated.
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-pr-wzkx7-1[0m stage [32meverything-else[0m and container [32mstep-postbuild-post-build[0m
+no CVE provider running in the current ** namespace so skip adding image to be analysed
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-pr-wzkx7-1[0m stage [32meverything-else[0m and container [32mstep-promote-make-preview[0m
+sed -i -e "s/version:.*/version: 0.0.0-SNAPSHOT-PR-14-1/" Chart.yaml
+sed -i -e "s/version:.*/version: 0.0.0-SNAPSHOT-PR-14-1/" ../*/Chart.yaml
+sed -i -e "s|repository:.*|repository: gcr.io\/dark-arcade-274513\/quickstart-test-**|" values.yaml
+sed -i -e "s/tag:.*/tag: 0.0.0-SNAPSHOT-PR-14-1/" values.yaml
+echo "  version: 0.0.0-SNAPSHOT-PR-14-1" >> requirements.yaml
+** step helm build
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+
+Showing logs for build [32mromanrzes-quickstart-test-jx-pr-wzkx7-1[0m stage [32meverything-else[0m and container [32mstep-promote-jx-preview[0m
+Creating a preview
+Created environment *********-quickstart-test-**-pr-14
+Namespace **-*********-quickstart-test-**-pr-14 created 
+expose:
+  Annotations:
+    helm.sh/hook: post-install,post-upgrade
+    helm.sh/hook-delete-policy: hook-succeeded
+  config:
+    domain: 34.89.6.205.nip.io
+    exposer: Ingress
+    http: "true"
+preview:
+  image:
+    repository: gcr.io/dark-arcade-274513/quickstart-test-**
+    tag: 0.0.0-SNAPSHOT-PR-14-1
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/**r-versions.git with ref refs/heads/master to /builder/home/.**/jenkins-x-versions
+
+Updating PipelineActivities *********-quickstart-test-**-pr-14-1 which has status Running
+Preview application is now available at: http://quickstart-test-**-**.nip.io
