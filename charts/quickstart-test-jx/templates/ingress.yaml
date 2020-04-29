@@ -1,3 +1,4 @@
+{{- if and (.Values.jxRequirements.ingress.domain) (not .Values.knativeDeploy) }}
 apiVersion: {{ .Values.jxRequirements.ingress.apiVersion }}
 kind: Ingress
 metadata:
@@ -11,6 +12,7 @@ metadata:
 {{- end }}
 {{- if .Values.jxRequirements.ingress.annotations }}
 {{ toYaml .Values.jxRequirements.ingress.annotations | indent 4 }}
+{{- end }}
   name: {{ .Values.service.name }}
 spec:
   rules:
