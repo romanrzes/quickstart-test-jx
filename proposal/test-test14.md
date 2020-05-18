@@ -1,22 +1,3 @@
-#!/bin/bash
-
-f1="$(git rev-parse --abbrev-ref HEAD)"
-
-touch f2
-
-cat > f2 <<EOF
-
-$f1
-
-EOF
-
-sed -i 's/\//-/g' f2
-
-f2=$(cat f2)
-
-touch $f2.md
-
-cat > $f2.md <<EOF
 
 [This is a template for a proposal document. If you're using this template, all [square brackets] should be removed/replaced]
 
@@ -85,6 +66,3 @@ cat > $f2.md <<EOF
 
 [Potential work that can be carried out after the proposed changes are implemented (e.g. features required for the next version)]
 
-EOF
-
-mv $f2.md proposal/
